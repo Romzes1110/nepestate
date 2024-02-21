@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $metaTitle ?? config('app.name', 'Nepesate') }}</title>
+    <title>{{ $metaTitle ?? config('app.name', 'CyberEsate') }}</title>
 
     <!-- Scripts -->
 
@@ -16,22 +16,22 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/cookie.css')}}">
     @stack('css')
-    
+
 </head>
 <body>
     <div id="app">
        @yield('layout-holder')
     </div>
-    <div class="grt-cookie"> 
+    <div class="grt-cookie">
         <div class="grt-cookies-msg">
-         <p> We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you accept and understand our <a href="">Privacy Policy</a>, and our <a href="">Terms of Service</a>. </p> 
-        </div> 
-        <span class="grt-cookie-button">Accept</span>
+         <p> Мы используем файлы cookie, чтобы обеспечить вам максимальное удобство использования нашего веб-сайта. Если вы продолжите использовать этот сайт, мы будем считать, что вы принимаете и понимаете нашу <a href="">Политику конфиденциальности</a>, и наши <a href="">Условия обслуживания</a>. </p>
+        </div>
+        <span class="grt-cookie-button">Принять</span>
        </div>
     @include('sweetalert::alert')
     <script src="{{ asset('js/app.js') }}"></script>
